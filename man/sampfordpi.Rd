@@ -2,9 +2,9 @@
 \alias{sampfordpi}
 \title{Joint inclusion probabilities for Sampford's PPS sampling method}
 \description{Compute joint inclusion probabilities for Sampford's method of PPS sampling}
-\usage{sampford(size,n)}
+\usage{sampfordpi(sizes,n)}
 \arguments{
-	\item{size}{A vector of the sizes of the units in the population}
+	\item{sizes}{A vector of the sizes of the units in the population}
 	\item{n}{The sample size}
 }
 \value{Returns 
@@ -17,8 +17,8 @@ Note that the size of the matrix is NxN, where N is the population size.}
 using Sampford's method.
 See the user's guide, pps.pdf, for more information.}
 \examples{
-size <- c(9,2,5,17,4,21,15,7,4,11,23,23,14)
-piij <- sampfordpi(size,4)
+sizes <- c(9,2,5,17,4,21,15,7,4,11,23,23,14)
+piij <- sampfordpi(sizes,4)
 weights <- 1/diag(piij)  # the weights one would use for estimation
 }
 \keyword{survey}

@@ -1,0 +1,6 @@
+0.93 2003-11-11
+- Trivial documentation changes to allow the package to pass stricter R 1.80 checking
+
+0.92 2003-07-23
+- First public release
+
