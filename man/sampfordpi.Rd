@@ -9,7 +9,7 @@
 }
 \value{Returns 
 a matrix with the inclusion probability pi(i) for
-for each unit i in the population and with the joint
+each unit i in the population and with the joint
 inclusion probability pi(i,j) of units i and j in
 position (i,j) in the matrix, where i and j are not equal.
 Note that the size of the matrix is NxN, where N is the population size.}

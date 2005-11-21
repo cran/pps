@@ -1,3 +1,7 @@
+0.94 2005-11-21
+- changed e-mail address of maintainer
+- changed name of user's guide to pps-ug.pdf (was pps.pdf)
+
 0.93 2003-11-11
 - Trivial documentation changes to allow the package to pass stricter R 1.80 checking
 

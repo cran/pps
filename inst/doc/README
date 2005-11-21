@@ -1,13 +1,13 @@
 The pps package consists of several functions for selecting a sample from a
 finite population. Some possible uses of the package are mentioned in the
-User's Guide, pps.pdf. The package implements mainly
+User's Guide, pps-ug.pdf. The package implements mainly
 probability-proportional-to-size (PPS) methods, specifically PPS systematic
 sampling and Sampford's method.  Details are given in the User's Guide. It is
 assumed that the user has some familiarity with sample survey theory and
 methods.
 
 The software should be considered beta software. Any improvements are welcome;
-my e-mail address is jack.gambino@sympatico.ca. Development and testing have
+my e-mail address is jack.gambino@gmail.com. Development and testing have
 been done largely on a linux system. I would be interested in hearing of
 experiences on other platforms.
 
