@@ -8,7 +8,7 @@
 }
 \value{Returns the vector of permuted indices. In the example below, 
 the returned vector has 29 elements.}
-\note{See the user's guide, pps.pdf, for more information.}
+\note{See the user's guide, pps-ug.pdf, for more information.}
 \examples{
 stratsizes <- c(9,10,10)  # strata have 9, 10 and 10 units, respectively
 permuteinstrata(stratsizes)

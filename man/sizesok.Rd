@@ -7,9 +7,7 @@
 	\item{size}{A vector of the sizes of the units in the population}
 	\item{n}{The sample size}
 }
-\value{Returns the number of "bad" units}
-\note{See the user's guide, pps.pdf, for more information.}
-\examples{
-}
+\value{Returns the number of 'bad' units}
+\note{See the user's guide, pps-ug.pdf, for more information.}
 \keyword{survey}
 

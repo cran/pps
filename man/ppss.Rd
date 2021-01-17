@@ -8,7 +8,7 @@
 	\item{n}{The sample size}
 }
 \value{Returns the indices of the units that were selected in the sample}
-\note{See the user's guide, pps.pdf, for more information.}
+\note{See the user's guide, pps-ug.pdf, for more information.}
 \examples{
 sizes <- c(9,2,5,17,4,21,15,7,4,11,23,23,14)
 sampleindices <- ppss(sizes,4)

@@ -15,7 +15,7 @@ position (i,j) in the matrix, where i and j are not equal.
 Note that the size of the matrix is NxN, where N is the population size.}
 \note{The function \code{sampford} can be used to select a sample
 using Sampford's method.
-See the user's guide, pps.pdf, for more information.}
+See the user's guide, pps-ug.pdf, for more information.}
 \examples{
 sizes <- c(9,2,5,17,4,21,15,7,4,11,23,23,14)
 piij <- sampfordpi(sizes,4)

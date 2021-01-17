@@ -11,7 +11,7 @@
 }
 \value{Returns the indices of the units that were selected in the sample}
 \note{\code{ppssstrat} calls \code{ppss} once per stratum.
-See the user's guide, pps.pdf, for more information.}
+See the user's guide, pps-ug.pdf, for more information.}
 \examples{
 sizes <- c(1:5,10:6)*10
 strat <- c(1,1,1,2,2,3,3,3,3,3)

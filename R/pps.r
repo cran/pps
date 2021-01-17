@@ -72,23 +72,19 @@ stratsrs <- function(stratum,nh)
 #
 # Returns: the indeces of the selected units
 #
+# Note: Use of findInterval() makes this much faster than 
+# the ppswr() function in version 0.94. See the Changelog.
 ############################################################
 
 ppswr <- function(sizes,n)
 {
 
-   N <- length(sizes)		# number of units in the population
-   cumsizes <- cumsum(sizes)
-   totsize <- cumsizes[N]	# the sum of all N sizes
-   s <- numeric(n)		# initialize the sample indeces vector
-
-   for (u in 1:n) {		# determine the uth sample unit
-      r <- runif(1,0,totsize)
-      i <- 1
-      while (cumsizes[i] < r) {i <- i+1}
-      s[u] <- i
-   }
-
+   N <- length(sizes)		    # number of units in the population
+   cumsizes <- c(0, cumsum(sizes))
+   totsize <- cumsizes[N+1] # the sum of all N sizes
+   
+   r <- runif(n, 0, totsize)
+   s <- findInterval(r, cumsizes) # vector of sample indeces
    s
 
 }
@@ -243,13 +239,13 @@ sampford <- function(size,n)
 		s <- numeric(n)
 
 		while ( length(unique(s)) < n ) {   # keep selecting samples
-						    # until one with n distinct
-						    # units appears
+						                            # until one with n distinct
+						                            # units appears
 	
 			s <- ppswr(adjsize,n-1)	    # select n-1 units using the
-						    #   adjusted sizes
+						                      # adjusted sizes
 			s[n] <- pps1(size)	    # select 1 unit using the
-						    #   original sizes
+						                  # original sizes
 
 		}
 	
@@ -370,4 +366,3 @@ permuteinstrata <- function(stratsizes)
 
 	neworder
 }
-

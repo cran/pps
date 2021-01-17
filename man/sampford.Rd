@@ -10,7 +10,7 @@
 \value{Returns the indices of the units that were selected in the sample}
 \note{The function \code{sampfordpi} can be used to compute joint inclusion
 probabilities for this method.
-See the user's guide, pps.pdf, for more information.}
+See the user's guide, pps-ug.pdf, for more information.}
 \examples{
 size <- c(9,2,5,17,4,21,15,7,4,11,23,23,14)
 sampleindices <- sampford(size,4)
